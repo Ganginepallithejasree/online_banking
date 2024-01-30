@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navigation Bar</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+     
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+	<!--logo-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="bank.css">
+	<style type="text/css">
+		*{
+			text-decoration: none;
+			margin:0;
+			padding:0;
+		}
+		.navbar{
+			background:#292075; font-family: calibri; padding-right: 15px;padding-left: 15px;
+			width:100%;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;width: max-content;
+		}
+		.navbar .navdiv .logo li{
+			background:#292075;
+		}
+		.logo a{
+			font-size:20px; font-weight: 600; color: white;background:#292075;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			 font-size: 18px; font-weight: bold; margin-right: 25px;color:orange;
+		}
+		button{
+			 margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color:orange; font-size: 15px;
+		}
+		.banner-area{
+			background-size: cover;
+			background-position: center;
+			height: 100vh;}
+			.about{
+    width: 100%;
+    padding: 100px 0px ;
+    background-color:#fff;
+
+}
+.main{
+    width:3000px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+	color: antiquewhite;
+}
+.service{
+    background-color:yellow;
+    width: 100%;
+    padding: 10px 0px;
+
+}
+.title h2{
+    color: white;
+    font-size: 75px ;
+    margin:30px auto;
+    text-align: center;
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+
+}
+.card{
+    height:150px;
+    width: 350px;
+    padding: 20px 35px;
+    background-color:yellow;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card .button{ 
+    background-color:deeppink;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid deeppink;
+    cursor: pointer;
+}
+footer{
+    position: relative;
+	padding:50px 0;
+    background-color:#292075;}
+	.row{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	ul{
+		list-style: none;
+	}
+	.footer-col{
+		width:25%;
+		padding:0;
+		margin-left: 0;
+		color:grey;
+		text-transform: capitalize;
+		margin-bottom: 30px;
+		background-color: #292075;
+	}
+	.footer-col h4::before{
+		position: absolute;
+		left:0;
+		bottom:-10px;
+		background-attachment: deeppink;
+		height:2px;
+		box-sizing: border-box;
+		width:100px;
+	}
+	.footer-col ul li:not(:last-child){
+		margin-bottom: 10px;
+	}
+	.footer-col ul li a{
+		font-size: 5px;
+		text-transform: capitalize;
+		color:#ffffff
+		text-decoration:none
+	}
+	.wrapper {
+    width:10%;
+    height:45px;
+    background:red;
+    border: none;
+    outline: none;
+    border-radius:40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color:#333;
+    font-weight:600;
+	display: flex;
+	justify-content: space-between;
+}
+.wrapper  a{
+    color:#fff; font-weight: bold; font-size: 15px;text-align: center;
+}
+h3{
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div>
+		<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-8872,resizemode-75,msid-99588847/markets/stocks/news/sbi-board-okays-fundraising-of-up-to-2-billion-in-long-term-debt.jpg" width="10%" height="10%"> <h4 style="color:antiquewhite">sbi bank</h4></div>
+			<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="contact us.html">contact us</a></li>
+			<li><a href="about us.html">about us</a></li>
+			<li><a href="onlin help.html">online help</a></li>
+			<li><a href="services .html">Services</a></li>
+				<button><a href="login.html">Login</a></button>
+				<button><a href="form.html">sign up</a></button>
+			</ul>
+		</div>
+	</nav>
+</div>
+<h3>
+	PURE BANKING
+</h3>
+<p>
+	Bill Payments Notification: New Registrations/Modifications are temporarily disabled on OnlineSBI/ YONO Lite/YONO. Already scheduled bills will be processed as planned. New registrations /scheduling of bills will be made available to you shortly with improved features. New bill payment can be done through the option “Pay Bills with BBPS”   |   Mandatory Profile password change after 365 days introduced for added security.   |   Call us toll free on 1800 1234 and 1800 2100 and get a wide range of services through SBI Contact Centre   |   For added security, new functionality to maintain per day and per transaction limit for general merchant payment transactions has been implemented. Please visit Define Limit under profile section.   |   SBI never asks for your Card/PIN/OTP/CVV details on phone, message or email. Please do not click on links received on your email or mobile asking your Bank/Card details.
+</p>
+<section class="about" >
+	<div class="main">
+		<div>
+				<img src="sbi.jpg" width="100%">
+			<table class="table table-hover text-center ">
+				<thead>
+				  <tr>
+					<th >Admin main page</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td><a href="admin.html">AcDetailsEntry</a></td>
+				  </tr>
+				  <tr>
+					<td><a href="account.html">AcDetailsList</a></td>
+				  </tr>
+				  <tr>
+					<td><a href="customers.html">CustAccountApproval</a></td>
+				  </tr>
+				  <tr>
+					<td><a href="customers.html">CustAcList</a></td>
+				  </tr>
+				  <tr>
+					<td><a href="deposit.html">DepositEntry</a></td>
+				  </tr>
+				  <tr>
+					<td><a href="transaction.html">TransactionList</a></td>
+				  </tr>
+				</tbody>
+			 </table>
+	  </div> 
+	</div>
+</section><center>
+<section class="wrapper">
+	<a href="payment transfer.html">payment transfer</a><br>
+</section><br>
+<center><section class="wrapper">
+<a href="account.html">create account</a>
+</section></center><br><br>
+<center><section class="wrapper">
+	<a href="my account.html">my account</a>
+	</section></center>
+<table class="table table-hover">
+	<thead>
+	  <tr>
+		<td><a href="https://rbiretaildirect.org.in/#/">RBI Retail Direct Portal</a></td>
+		<td><a href="https://retail.onlinesbi.sbi/retail/blockatmcardintermediate.htm?bankCode=0">Block ATM card</a></td>
+		<td><a href="https://crcf.sbi.co.in/ccf/home/UnAuth/">Register complaint of unauthorized Transaction</a></td>
+		<td><a href="https://retail.onlinesbi.sbi/npersonal/reg_forms.html">Banking FOrms</a></td>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td><a href="https://www.psballiance.com/doorstep-banking.html">Door step Banking</a></td>
+		<td><a href="https://www.sbigeneral.in/downloads">Sbi general insurance download</a></td>
+		<td><a href="https://fastag.onlinesbi.com/">SBI Fas tag</a></td>
+		<td><a href="https://bank.sbi/web/salary-account">Sbi salary Account</a></td>
+		
+	  </tr>
+	  </tr>
+	  <tr>
+		<td><a href="https://bank.sbi/web/nri/home">NRI Services</a></td>
+		<td><a href="https://www.onlinesbi.sbi/documents/Yono_Business_Fair_Practice_Lending_Code.pdf">Fain Lending Practice COde</a></td>
+		<td><a href="https://www.sbisecurities.in">Sbi Securities</a></td>
+		<td><a href="https://remit.onlinesbi.com">Sbi Express Remit</a></td>
+		
+	  </tr>
+	  </tr>
+	  <tr>
+		
+		<td><a href="https://www.sbimf.com/en-us/quick-invest?arn_code=ARN121">Sbi mutual Fund</a></td>
+		<td><a href="https://www.sbilife.co.in">SBI Life insurance</a></td>
+		<td><a href="www.sbicard.com">SBI card</a></td>
+		<td><a href="https://www.onlinesbiglobal.com">online SBI Global</a></td>
+		
+	  </tr>
+	  </tr>	
+	</tbody>
+  </table>
+  <center><section class="wrapper">
+	<a href="https://sbi.co.in/web/personal-banking/digital/whatsapp-banking">For more links</a>
+	</section></center>
+<div class="service" style="background-color:#fff">
+	<div class="title" >
+		<h2 >Our services</h2>
+	</div>
+	<div class="box">
+		<div class="card" >
+			<h5>Account creation</h5>
+			<div class="pra" >
+				<p style="text-align: center;" >
+					<a class="button" href="account.html" >click</a>
+				</p><table></table>
+			</div>
+		</div>
+		<div class="card" >
+			<h5>edit account details</h5>
+			<div class="pra" >
+				<p style="text-align: center;" >
+					<a class="button" href="account.html" >click</a>
+				</p>
+		 	</div>
+		</div>
+		<div class="card" > 
+			<h5>fund transfer</h5>
+			<div class="pra" >
+				<p style="text-align: center;" >
+					<a class="button" href="transfer.html" >click</a>
+				</p>
+			</div>
+   		</div>
+	<div class="card" >
+		<h5>loan application</h5>
+		<div class="pra" >
+			<p style="text-align: center;" >
+				<a class="button" href="loan.html" >click</a>
+			</p>
+		</div>
+	</div>
+	<div class="card" >
+		<h5>check balance</h5>
+		<div class="pra" >
+			<p style="text-align: center;" >
+				<a class="button" href="balance.html" >click</a>
+			</p>
+		 </div>
+	</div>
+	<div class="card" > 
+		<h5>credit card application</h5>
+		<div class="pra" >
+			<p style="text-align: center;" >
+				<a class="button" href="credit.html" >click</a>
+			</p>
+		</div>
+	</div> 
+</div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col">
+				<h4 style="color:darkgoldenrod">home</h4>
+				<ul>
+					<li><a href="#"></a>Forex cards rates</li><br>
+					<li><a href="#"></a>intrest rates</li><br>
+					<li><a href="#"></a>download forms</li><br>
+					<li><a href="#"></a>corporate social</li>
+					<li><a href="#"></a>Responsibility</li>
+					<li><a href="#"></a>sustainability and business</li><br>
+					<li><a href="#"></a>responsibility policy</li>
+					<li><a href="#"></a>bank calender</li><br>
+					<li><a href="#"></a>RTI 2005</li><br>
+					<li><a href="#"></a>Grahak setu</li><br>
+					<li><a href="#"></a>equal oppurtunity policy</li>
+					<li><a href="#"></a>PWD</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4 style="color:darkgoldenrod">NRI</h4>
+				<ul>
+					<li><a href="#"></a>accounts</li><br>
+					<li><a href="#"></a>investments</li><br>
+					<li><a href="#"></a>Loans</li><br>
+					<li><a href="#"></a>Remittances</li><br>
+					<li><a href="#"></a>Information</li><br>
+					<li><a href="#"></a>Privacy notice</li><br>
+					<li><a href="#"></a>forms</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4 style="color:darkgoldenrod">personal</h4>
+				<ul>
+					<li><a href="#"></a>saving account</li><br>
+					<li><a href="#"></a>loans</li><br>
+					<li><a href="#"></a>investment</li><br>
+					<li><a href="#"></a>cards</li><br>
+					<li><a href="#"></a>digital</li><br>
+					<li><a href="#"></a>information&services</li><br>
+					<li><a href="#"></a>save charges</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4 style="color:darkgoldenrod">Information</h4>
+				<ul>
+					<li><a href="#"></a>Banking</li><br>
+					<li><a href="#"></a>credit finance</li><br>
+					<li><a href="#"></a>services</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4 style="color:darkgoldenrod">Business</h4>
+					<ul>
+					<li><a href="#"></a>current account</li><br>
+					<li><a href="#"></a>sme-deposits</li><br>
+					<li><a href="#"></a>sme-loans</li><br><br>
+					<li><a href="#"></a>information</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4 style="color:darkgoldenrod">Information</h4>
+					<ul>
+						<li><a href="#"></a>SBI wealth</li><br>
+						<li><a href="#"></a>products</li>
+					</ul>
+				</div>
+			<div class="footer-col">
+				<h4 style="color:darkgoldenrod">follow us</h4>
+				<div class="social-links">
+					<a href="https://www.facebook.com/StateBankOfIndia/"><i class="bi bi-facebook"></i>facebook</a><br>
+					<a href="https://twitter.com/TheOfficialSBI?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bi bi-twitter"></i>twitter</a><br>
+					<a href="https://www.instagram.com/theofficialsbi/?hl=en"><i class="bi bi-instagram"></i>instagram</a><br>
+					<a href="https://in.linkedin.com/company/state-bank-of-india"><i class="bi bi-linkedin"></i>linkedin</a>
+				</div>
+			</div>
+		</div>
+		<P style="color:white">IMPORTANT: State Bank of India never ask for your user id / password / pin no. through phone call / SMSes / e-mails. Any such phone call / SMSes / e-mails asking you to reveal credential or One Time Password through SMS could be attempt to withdraw money from your account.NEVER share these details to anyone. State Bank of India wants you to be secure. If you come across any such instances please inform us through e-mail to the following address- </P>
+		<p style="color:white">&copy;Copyright State Bank of India (APM Id : Webs_Info_875)
+		
+		Site best viewed at 1420 x 768 resolution in Edge, Mozilla 40 +, Google Chrome 45 </p>
+		
+	</div>
+</footer> 
+</div>
+</body>
+</html>
